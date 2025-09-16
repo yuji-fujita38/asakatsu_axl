@@ -5,7 +5,7 @@
   "scripts": {
     "build": "next build",
     "dev": "next dev",
-    "pages": "npm run build && npm run export && rm -rf docs && mv out docs && cp docs/index.html docs/404.html"
+    "pages": "npm run build && rm -rf docs && mv out docs && cp docs/index.html docs/404.html"
   },
   "dependencies": {
     "@radix-ui/react-slot": "^1.0.2",
