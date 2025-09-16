@@ -4,9 +4,11 @@
   "private": true,
   "scripts": {
     "build": "next build",
+    "export": "next export",
     "dev": "next dev",
     "lint": "next lint",
-    "start": "next start"
+    "start": "next start",
+    "pages": "npm run build && npm run export && rm -rf docs && mv out docs && cp docs/index.html docs/404.html"
   },
   "dependencies": {
     "@radix-ui/react-slot": "^1.0.2",
